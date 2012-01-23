@@ -14,3 +14,4 @@
   <project path="build" name="android">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+</manifest>
