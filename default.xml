@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/" />
+
+  <remote  name="github"
+           fetch="git://github.com/" 
+
+  <default revision="refs/heads/olympus"
+           remote="github"
+           sync-j="4" />
+
+  <project path="build" name="android">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
